@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>现场监理沟通俄语学习页</title>
+<style>
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --accent:#1f4e79;
+  --accent2:#0f766e;
+  --soft:#eef4fb;
+  --soft2:#ecfdf5;
+  --warn:#fff7ed;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
+}
+header{
+  background:linear-gradient(135deg,#173f63,#245f8f);
+  color:#fff;
+  padding:34px 22px 26px;
+}
+header .wrap,.wrap{max-width:1180px;margin:0 auto}
+h1{margin:0 0 8px;font-size:30px}
+.subtitle{opacity:.9;font-size:15px}
+.toolbar{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:10px;
+}
+input[type="search"]{
+  width:100%;
+  border:0;
+  border-radius:10px;
+  padding:12px 14px;
+  font-size:15px;
+  outline:none;
+}
+button{
+  border:0;
+  border-radius:10px;
+  padding:10px 15px;
+  background:#fff;
+  color:#173f63;
+  font-weight:700;
+  cursor:pointer;
+}
+nav{
+  position:sticky;
+  top:0;
+  z-index:5;
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(8px);
+}
+nav .wrap{
+  display:flex;
+  gap:8px;
+  overflow:auto;
+  padding:10px 0;
+}
+nav a{
+  white-space:nowrap;
+  text-decoration:none;
+  color:var(--accent);
+  background:var(--soft);
+  padding:7px 11px;
+  border-radius:999px;
+  font-size:14px;
+}
+main{padding:24px 16px 50px}
+.section{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:22px;
+  margin-bottom:22px;
+  box-shadow:0 6px 20px rgba(31,78,121,.06);
+}
+.section h2{
+  margin:0 0 14px;
+  color:var(--accent);
+  font-size:24px;
+}
+.summary{
+  background:var(--soft);
+  border-left:4px solid var(--accent);
+  border-radius:10px;
+  padding:14px 16px;
+  margin:10px 0 18px;
+}
+.sentence{
+  border-top:1px solid var(--line);
+  padding-top:18px;
+  margin-top:18px;
+}
+.sentence:first-of-type{border-top:0;padding-top:0}
+.ru{
+  font-size:20px;
+  font-weight:700;
+  color:#111827;
+  background:#f8fafc;
+  border-radius:10px;
+  padding:12px 14px;
+}
+.cn{
+  margin-top:8px;
+  color:var(--accent2);
+  font-weight:700;
+}
+.label{
+  display:inline-block;
+  margin:14px 0 8px;
+  font-size:13px;
+  font-weight:700;
+  color:#fff;
+  background:var(--accent);
+  border-radius:999px;
+  padding:3px 9px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:6px;
+  font-size:14px;
+}
+th,td{
+  border:1px solid var(--line);
+  padding:9px 10px;
+  vertical-align:top;
+}
+th{
+  background:#f3f4f6;
+  text-align:left;
+}
+td:first-child{
+  font-weight:700;
+  color:#111827;
+  width:26%;
+}
+.note{
+  background:var(--soft2);
+  border-left:4px solid var(--accent2);
+  padding:12px 14px;
+  border-radius:9px;
+  margin-top:12px;
+}
+.warning{
+  background:var(--warn);
+  border-left:4px solid #ea580c;
+  padding:12px 14px;
+  border-radius:9px;
+  margin-top:12px;
+}
+.phrase-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:10px;
+  margin-top:10px;
+}
+.phrase{
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:11px 12px;
+  background:#fff;
+}
+.phrase b{color:var(--accent)}
+.vocab{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:10px;
+}
+.vocab .item{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:10px 12px;
+}
+.vocab .item strong{display:block;color:#111827}
+.small{font-size:13px;color:var(--muted)}
+.hidden{display:none!important}
+footer{
+  color:var(--muted);
+  text-align:center;
+  padding:20px;
+  font-size:13px;
+}
+@media (max-width:700px){
+  h1{font-size:24px}
+  .toolbar{grid-template-columns:1fr}
+  .ru{font-size:18px}
+  .section{padding:16px}
+  td:first-child{width:34%}
+}
+@media print{
+  nav,.toolbar,button{display:none!important}
+  body{background:white}
+  .section{box-shadow:none;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>现场监理沟通俄语学习页</h1>
+    <div class="subtitle">路基工程量 · 沥青上面层 · 测量资料签认 · 车辆保养 ｜ 中俄对照 + 逐词讲解 + 现场高频表达</div>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="输入中文或俄语搜索，例如：填方 / насыпь / 签认 / подписать">
+      <button onclick="window.print()">打印 / 导出 PDF</button>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#s1">1 路基工程量</a>
+    <a href="#s2">2 沥青上面层</a>
+    <a href="#s3">3 测量资料签认</a>
+    <a href="#s4">4 车辆保养</a>
+    <a href="#vocab">核心词汇</a>
+  </div>
+</nav>
+
+<main class="wrap" id="content">
+
+<section class="section searchable" id="s1">
+  <h2>1. 路基工程量核对（填方、挖方）</h2>
+  <div class="summary">
+    <b>现场表达：</b><br>
+    Просьба проверить объёмы земляных работ по земляному полотну — насыпь и выемку.
+    Посмотрите, пожалуйста, не включены ли туда лишние объёмы.
+    Направьте нам данные, чтобы мы могли всё сверить.
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Просьба проверить объёмы земляных работ по земляному полотну — насыпь и выемку.</div>
+    <div class="cn">请核对路基土方工程量——填方和挖方。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Просьба</td><td>请求；请……</td><td>工程工作沟通常用，比直接命令更客气。</td></tr>
+      <tr><td>проверить</td><td>检查、核查</td><td>原形动词，表示核实是否正确。</td></tr>
+      <tr><td>объёмы</td><td>工程量、数量、体积</td><td>单数：объём。</td></tr>
+      <tr><td>земляных работ</td><td>土方工程</td><td>固定搭配：земляные работы。</td></tr>
+      <tr><td>по земляному полотну</td><td>关于路基 / 路基方面</td><td>земляное полотно = 路基。</td></tr>
+      <tr><td>насыпь</td><td>填方、路堤</td><td>公路工程高频词。</td></tr>
+      <tr><td>выемка</td><td>挖方、路堑</td><td>与 насыпь 成对出现。</td></tr>
+    </table>
+    <div class="note">
+      <b>必须记住：</b> объём насыпи = 填方量；объём выемки = 挖方量；земляное полотно = 路基。
+    </div>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Посмотрите, пожалуйста, не включены ли туда лишние объёмы.</div>
+    <div class="cn">麻烦看一下，里面是不是包含了多余的工程量。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Посмотрите</td><td>请看一下、请检查一下</td><td>来自 посмотреть。</td></tr>
+      <tr><td>пожалуйста</td><td>请、麻烦</td><td>礼貌用语。</td></tr>
+      <tr><td>включены ли</td><td>是否被包括 / 是否被计入</td><td>ли 构成“是否”疑问。</td></tr>
+      <tr><td>туда</td><td>到那里 / 计入其中</td><td>这里指计入工程量中。</td></tr>
+      <tr><td>лишние объёмы</td><td>多余的工程量、多算的量</td><td>лишний = 多余的、不应有的。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Направьте нам данные, чтобы мы могли всё сверить.</div>
+    <div class="cn">请把数据发给我们，以便我们全部核对一下。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Направьте</td><td>请发送、请提供</td><td>正式沟通中比 отправьте 更稳妥。</td></tr>
+      <tr><td>нам</td><td>给我们</td><td>мы 的第三格。</td></tr>
+      <tr><td>данные</td><td>数据、资料</td><td>常用于工程数据。</td></tr>
+      <tr><td>чтобы</td><td>为了、以便</td><td>引出目的。</td></tr>
+      <tr><td>могли</td><td>能够</td><td>来自 мочь。</td></tr>
+      <tr><td>сверить</td><td>核对、比对</td><td>强调把两套数据进行对照。</td></tr>
+    </table>
+    <div class="note"><b>区别：</b> проверить = 检查对不对；сверить = 两份数据相互核对。</div>
+  </div>
+</section>
+
+<section class="section searchable" id="s2">
+  <h2>2. 沥青上面层工程量及现场测量</h2>
+  <div class="summary">
+    <b>现场表达：</b><br>
+    Вчера мы сделали замеры примерно на участке протяжённостью 3 км.
+    В некоторых местах показатели немного ниже проектных, а в некоторых — немного выше.
+    На практике невозможно в каждой точке выполнить всё абсолютно одинаково, точно как по теоретическим значениям.
+    Со своей стороны мы будем максимально контролировать качество и соблюдать требования проекта.
+    Просим Вас также учитывать фактические условия на объекте и по возможности оказывать нам содействие при проверке и учёте выполненных объёмов.
+    Если у Вас есть какие-либо требования, замечания или предложения, можете прямо нам сказать.
+    Мы готовы всё обсудить и совместно решить возникающие вопросы.
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Вчера мы сделали замеры примерно на участке протяжённостью 3 км.</div>
+    <div class="cn">昨天我们在大约3公里长的路段进行了测量。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Вчера</td><td>昨天</td><td>时间状语。</td></tr>
+      <tr><td>сделали замеры</td><td>进行了测量</td><td>现场口语常用。</td></tr>
+      <tr><td>примерно</td><td>大约、大概</td><td>表示估算。</td></tr>
+      <tr><td>на участке</td><td>在路段上</td><td>участок = 路段、区段。</td></tr>
+      <tr><td>протяжённостью 3 км</td><td>长度为3公里</td><td>протяжённость = 线路长度、里程长度。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">В некоторых местах показатели немного ниже проектных, а в некоторых — немного выше.</div>
+    <div class="cn">有些位置的数据稍微低于设计值，而有些位置稍微高于设计值。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>в некоторых местах</td><td>在一些位置</td><td>现场描述局部情况常用。</td></tr>
+      <tr><td>показатели</td><td>指标、数据</td><td>可泛指测量结果。</td></tr>
+      <tr><td>немного</td><td>稍微、有一点</td><td>弱化语气。</td></tr>
+      <tr><td>ниже</td><td>更低、低于</td><td>常用于标高。</td></tr>
+      <tr><td>проектных</td><td>设计值的</td><td>完整可说 проектных значений。</td></tr>
+      <tr><td>выше</td><td>更高、高于</td><td>与 ниже 对应。</td></tr>
+    </table>
+    <div class="note">
+      <b>标高：</b> отметка ниже/выше проектной = 标高低于/高于设计标高。<br>
+      <b>厚度：</b> толщина меньше/больше проектной = 厚度小于/大于设计厚度。
+    </div>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">На практике невозможно в каждой точке выполнить всё абсолютно одинаково, точно как по теоретическим значениям.</div>
+    <div class="cn">在实际施工中，不可能每一个点都做得完全一样，完全按照理论数值来。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>На практике</td><td>在实际中 / 在现场实际施工中</td><td>解释设计与现场差异时很常用。</td></tr>
+      <tr><td>невозможно</td><td>不可能</td><td>无人称结构。</td></tr>
+      <tr><td>в каждой точке</td><td>在每一个点</td><td>точка = 点、测点。</td></tr>
+      <tr><td>выполнить</td><td>做到、完成</td><td>工程现场常用动词。</td></tr>
+      <tr><td>абсолютно одинаково</td><td>完全一样</td><td>强调完全一致。</td></tr>
+      <tr><td>теоретическим значениям</td><td>理论数值</td><td>正式工程场景中也常说 проектным значениям。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Со своей стороны мы будем максимально контролировать качество и соблюдать требования проекта.</div>
+    <div class="cn">我们这边会尽最大努力控制质量，并遵守设计要求。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Со своей стороны</td><td>从我们这边来说 / 我们这边</td><td>正式沟通常用。</td></tr>
+      <tr><td>максимально</td><td>最大程度地、尽可能地</td><td>表达“尽最大努力”。</td></tr>
+      <tr><td>контролировать качество</td><td>控制质量</td><td>固定搭配。</td></tr>
+      <tr><td>соблюдать</td><td>遵守</td><td>常与 требования / нормы 搭配。</td></tr>
+      <tr><td>требования проекта</td><td>设计要求 / 项目要求</td><td>工程高频表达。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Просим Вас также учитывать фактические условия на объекте и по возможности оказывать нам содействие при проверке и учёте выполненных объёмов.</div>
+    <div class="cn">也请您考虑现场实际条件，并在检查及已完成工程量计量时，在可能的情况下给予我们支持和配合。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Просим Вас</td><td>我们请您……</td><td>正式礼貌表达。</td></tr>
+      <tr><td>учитывать</td><td>考虑、纳入考虑</td><td>现场协商高频词。</td></tr>
+      <tr><td>фактические условия</td><td>实际条件</td><td>фактический = 实际的。</td></tr>
+      <tr><td>на объекте</td><td>在项目现场</td><td>объект = 工程项目、施工现场。</td></tr>
+      <tr><td>по возможности</td><td>尽可能、条件允许时</td><td>礼貌缓和语气。</td></tr>
+      <tr><td>оказывать содействие</td><td>给予协助、提供配合</td><td>正式且地道。</td></tr>
+      <tr><td>при проверке</td><td>在检查时</td><td>при + 第六格。</td></tr>
+      <tr><td>учёт выполненных объёмов</td><td>已完成工程量的计量、核算</td><td>工程计量语境常用。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Если у Вас есть какие-либо требования, замечания или предложения, можете прямо нам сказать.</div>
+    <div class="cn">如果您有什么要求、意见或者建议，可以直接跟我们说。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Если</td><td>如果</td><td>条件从句。</td></tr>
+      <tr><td>у Вас есть</td><td>您有……</td><td>俄语“有”的常见结构。</td></tr>
+      <tr><td>какие-либо</td><td>任何、某些</td><td>不限定具体内容。</td></tr>
+      <tr><td>требования</td><td>要求</td><td>监理要求。</td></tr>
+      <tr><td>замечания</td><td>意见、问题、整改意见</td><td>监理场景非常高频。</td></tr>
+      <tr><td>предложения</td><td>建议</td><td>提议、建议。</td></tr>
+      <tr><td>прямо</td><td>直接地</td><td>可以直接说明。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Мы готовы всё обсудить и совместно решить возникающие вопросы.</div>
+    <div class="cn">我们愿意把所有问题都沟通一下，共同解决出现的问题。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>готовы</td><td>愿意、准备好</td><td>мы готовы = 我们愿意。</td></tr>
+      <tr><td>обсудить</td><td>讨论、沟通</td><td>常用于协商。</td></tr>
+      <tr><td>совместно</td><td>共同地</td><td>强调双方一起。</td></tr>
+      <tr><td>решить</td><td>解决</td><td>решить вопрос = 解决/处理问题。</td></tr>
+      <tr><td>возникающие вопросы</td><td>出现的问题</td><td>正式表达。</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section searchable" id="s3">
+  <h2>3. 测量监理、资料签认</h2>
+  <div class="summary">
+    <b>现场表达：</b><br>
+    Когда приедет инженер по геодезическому надзору, пожалуйста, позвоните ему заранее и объясните ситуацию.
+    Те документы по геодезии, которые соответствуют требованиям и которые можно подписать, пусть по возможности подпишет сразу, чтобы потом не возникало лишних проблем и сложностей с оформлением документации.
+    Нам важно, чтобы все геодезические документы были своевременно проверены и подписаны.
+    Со своей стороны мы тоже будем полностью сотрудничать и всё необходимое предоставим вовремя.
+    Если всё по геодезии удастся нормально подписать и оформить, мы Вас тоже не обидим.
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Когда приедет инженер по геодезическому надзору, пожалуйста, позвоните ему заранее и объясните ситуацию.</div>
+    <div class="cn">测量监理过来的时候，麻烦您提前给他打电话，把情况说明一下。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Когда</td><td>当……的时候</td><td>引导时间从句。</td></tr>
+      <tr><td>приедет</td><td>会到、会过来</td><td>来自 приехать。</td></tr>
+      <tr><td>инженер</td><td>工程师</td><td>—</td></tr>
+      <tr><td>по геодезическому надзору</td><td>测量监理 / 测量监督</td><td>现场口语也可说 геодезист от надзора。</td></tr>
+      <tr><td>позвоните ему</td><td>给他打电话</td><td>ему = 给他。</td></tr>
+      <tr><td>заранее</td><td>提前</td><td>高频词。</td></tr>
+      <tr><td>объясните ситуацию</td><td>说明情况</td><td>объяснить = 解释、说明。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Те документы по геодезии, которые соответствуют требованиям и которые можно подписать, пусть по возможности подпишет сразу.</div>
+    <div class="cn">那些符合要求、可以签认的测量资料，希望他尽量当场就签掉。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>документы по геодезии</td><td>测量资料</td><td>geodesy related documents。</td></tr>
+      <tr><td>которые</td><td>那些……的 / which</td><td>关系代词。</td></tr>
+      <tr><td>соответствуют требованиям</td><td>符合要求</td><td>非常重要的固定搭配。</td></tr>
+      <tr><td>можно подписать</td><td>可以签认</td><td>подписать = 签字、签认。</td></tr>
+      <tr><td>пусть</td><td>让他 / 希望他</td><td>现场口语常用。</td></tr>
+      <tr><td>по возможности</td><td>尽可能</td><td>缓和语气。</td></tr>
+      <tr><td>сразу</td><td>马上、当场</td><td>强调不要拖到后面。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Чтобы потом не возникало лишних проблем и сложностей с оформлением документации.</div>
+    <div class="cn">这样以后在资料办理过程中就不会产生多余的麻烦和困难。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Чтобы</td><td>为了、以免</td><td>这里表示目的。</td></tr>
+      <tr><td>потом</td><td>之后、以后</td><td>—</td></tr>
+      <tr><td>не возникало</td><td>不要出现 / 不发生</td><td>возникать = 出现、发生。</td></tr>
+      <tr><td>лишних проблем</td><td>不必要的问题</td><td>лишний = 多余的。</td></tr>
+      <tr><td>сложностей</td><td>困难、麻烦</td><td>复数第二格。</td></tr>
+      <tr><td>оформление документации</td><td>资料办理、资料完善</td><td>工程文件工作高频表达。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Нам важно, чтобы все геодезические документы были своевременно проверены и подписаны.</div>
+    <div class="cn">对我们来说，所有测量资料能够及时检查并签认非常重要。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Нам важно</td><td>对我们来说很重要</td><td>нам = 对我们。</td></tr>
+      <tr><td>все</td><td>所有</td><td>—</td></tr>
+      <tr><td>геодезические документы</td><td>测量资料</td><td>正式表达。</td></tr>
+      <tr><td>своевременно</td><td>及时地</td><td>比 вовремя 更正式。</td></tr>
+      <tr><td>проверены</td><td>被检查</td><td>被动短尾形式。</td></tr>
+      <tr><td>подписаны</td><td>被签认</td><td>来自 подписать。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Со своей стороны мы тоже будем полностью сотрудничать и всё необходимое предоставим вовремя.</div>
+    <div class="cn">我们这边也会充分配合，所有需要的资料都会及时提供。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Со своей стороны</td><td>我们这边</td><td>表达双方责任。</td></tr>
+      <tr><td>полностью</td><td>充分地、完全地</td><td>—</td></tr>
+      <tr><td>сотрудничать</td><td>合作、配合</td><td>正式沟通高频词。</td></tr>
+      <tr><td>всё необходимое</td><td>所有需要的东西 / 资料</td><td>必要内容的统称。</td></tr>
+      <tr><td>предоставим</td><td>我们会提供</td><td>来自 предоставить。</td></tr>
+      <tr><td>вовремя</td><td>按时、及时</td><td>口语自然。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Если всё по геодезии удастся нормально подписать и оформить, мы Вас тоже не обидим.</div>
+    <div class="cn">如果测量方面的资料能够顺利签完、办好，我们也不会亏待您。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Если</td><td>如果</td><td>条件从句。</td></tr>
+      <tr><td>всё по геодезии</td><td>测量方面所有事情</td><td>概括测量资料、手续等。</td></tr>
+      <tr><td>удастся</td><td>能够成功、能够顺利做到</td><td>来自 удаться。</td></tr>
+      <tr><td>нормально</td><td>顺利地、正常地</td><td>口语常用。</td></tr>
+      <tr><td>подписать</td><td>签认</td><td>签字。</td></tr>
+      <tr><td>оформить</td><td>办好、完善手续</td><td>工程文件高频动词。</td></tr>
+      <tr><td>мы Вас тоже не обидим</td><td>我们也不会亏待您</td><td>俄语口语里带“会表示感谢/不会让您白帮忙”的潜台词。</td></tr>
+    </table>
+    <div class="warning">
+      <b>使用提醒：</b> “Мы Вас не обидим” 很接近中文“不会亏待您”，但在监理签字、计量、验收等职责场景中，可能被理解为个人利益回报。适合熟人之间口头表达，不建议写进正式文件、会议纪要或正式工作群。
+    </div>
+  </div>
+</section>
+
+<section class="section searchable" id="s4">
+  <h2>4. 车辆保养及临时用车</h2>
+  <div class="summary">
+    <b>现场表达：</b><br>
+    Машину уже пора обслужить.
+    Я сейчас довольно занят, особенно вопросами, связанными с экологией.
+    Пока, пожалуйста, временно пользуйтесь другой машиной.
+    Когда я закончу с этими экологическими вопросами и немного освобожусь, тогда уже отдельно решим вопрос с этой машиной.
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Машину уже пора обслужить.</div>
+    <div class="cn">这辆车也该保养了。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Машину</td><td>车辆、汽车</td><td>машина 的第四格。</td></tr>
+      <tr><td>уже</td><td>已经、也到了……的时候</td><td>表示时间已到。</td></tr>
+      <tr><td>пора</td><td>该……了</td><td>пора + 动词原形。</td></tr>
+      <tr><td>обслужить</td><td>保养、维护</td><td>技术保养：техническое обслуживание。</td></tr>
+    </table>
+    <div class="note">常用：ТО = техническое обслуживание = 车辆技术保养。</div>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Я сейчас довольно занят, особенно вопросами, связанными с экологией.</div>
+    <div class="cn">我现在比较忙，尤其是在忙环保相关的事情。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Я</td><td>我</td><td>—</td></tr>
+      <tr><td>сейчас</td><td>现在、这阵子</td><td>—</td></tr>
+      <tr><td>довольно</td><td>比较、相当</td><td>弱化表达。</td></tr>
+      <tr><td>занят</td><td>忙</td><td>男性说 занят，女性说 занята。</td></tr>
+      <tr><td>особенно</td><td>尤其</td><td>—</td></tr>
+      <tr><td>вопросами</td><td>事情、问题</td><td>这里指工作事项。</td></tr>
+      <tr><td>связанными с</td><td>与……相关的</td><td>固定搭配。</td></tr>
+      <tr><td>экологией</td><td>环保、环境方面</td><td>экология。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Пока, пожалуйста, временно пользуйтесь другой машиной.</div>
+    <div class="cn">暂时请先用另外一辆车。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Пока</td><td>暂时、目前先</td><td>表示临时安排。</td></tr>
+      <tr><td>пожалуйста</td><td>请</td><td>礼貌用语。</td></tr>
+      <tr><td>временно</td><td>临时地、暂时地</td><td>—</td></tr>
+      <tr><td>пользуйтесь</td><td>请使用</td><td>пользоваться + 第五格。</td></tr>
+      <tr><td>другой машиной</td><td>另一辆车</td><td>因 пользоваться 要求第五格。</td></tr>
+    </table>
+  </div>
+
+  <div class="sentence">
+    <div class="ru">Когда я закончу с этими экологическими вопросами и немного освобожусь, тогда уже отдельно решим вопрос с этой машиной.</div>
+    <div class="cn">等我把这一阵环保相关的事情处理完，稍微空下来以后，我们再单独处理这辆车的问题。</div>
+    <span class="label">逐词讲解</span>
+    <table>
+      <tr><th>俄语</th><th>中文</th><th>说明</th></tr>
+      <tr><td>Когда</td><td>等到 / 当……的时候</td><td>时间从句。</td></tr>
+      <tr><td>закончу</td><td>我会完成、结束</td><td>来自 закончить。</td></tr>
+      <tr><td>с этими экологическими вопросами</td><td>这些环保相关事情</td><td>с + 第五格。</td></tr>
+      <tr><td>немного</td><td>稍微</td><td>—</td></tr>
+      <tr><td>освобожусь</td><td>我空下来、有时间</td><td>来自 освободиться。</td></tr>
+      <tr><td>тогда</td><td>到时候</td><td>—</td></tr>
+      <tr><td>отдельно</td><td>单独地</td><td>—</td></tr>
+      <tr><td>решим вопрос</td><td>我们处理 / 解决这个事情</td><td>工程现场极高频表达。</td></tr>
+      <tr><td>с этой машиной</td><td>关于这辆车</td><td>“处理这辆车的问题”。</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section searchable" id="vocab">
+  <h2>核心现场词汇速查</h2>
+  <div class="vocab">
+    <div class="item"><strong>земляное полотно</strong><span>路基</span></div>
+    <div class="item"><strong>земляные работы</strong><span>土方工程</span></div>
+    <div class="item"><strong>объём земляных работ</strong><span>土方工程量</span></div>
+    <div class="item"><strong>насыпь</strong><span>填方 / 路堤</span></div>
+    <div class="item"><strong>выемка</strong><span>挖方 / 路堑</span></div>
+    <div class="item"><strong>сверить объёмы</strong><span>核对工程量</span></div>
+    <div class="item"><strong>замеры</strong><span>测量</span></div>
+    <div class="item"><strong>отметка</strong><span>标高</span></div>
+    <div class="item"><strong>толщина</strong><span>厚度</span></div>
+    <div class="item"><strong>проектное значение</strong><span>设计值</span></div>
+    <div class="item"><strong>учитывать фактические условия</strong><span>考虑实际情况</span></div>
+    <div class="item"><strong>оказать содействие</strong><span>给予配合、协助</span></div>
+    <div class="item"><strong>замечание</strong><span>监理意见 / 检查发现的问题</span></div>
+    <div class="item"><strong>геодезист</strong><span>测量员 / 测量工程师</span></div>
+    <div class="item"><strong>геодезическая документация</strong><span>测量资料</span></div>
+    <div class="item"><strong>подписать документы</strong><span>签认资料</span></div>
+    <div class="item"><strong>соответствовать требованиям</strong><span>符合要求</span></div>
+    <div class="item"><strong>оформить документацию</strong><span>办理、完善资料</span></div>
+    <div class="item"><strong>своевременно</strong><span>及时</span></div>
+    <div class="item"><strong>техническое обслуживание</strong><span>技术保养、车辆保养</span></div>
+    <div class="item"><strong>ТО</strong><span>车辆保养的常用缩写</span></div>
+    <div class="item"><strong>освободиться</strong><span>忙完、有空下来</span></div>
+    <div class="item"><strong>решить вопрос</strong><span>解决 / 处理一个事情</span></div>
+    <div class="item"><strong>проверить</strong><span>检查、核查</span></div>
+    <div class="item"><strong>сверить</strong><span>核对、比对</span></div>
+    <div class="item"><strong>согласовать</strong><span>协调、确认、商定</span></div>
+    <div class="item"><strong>подписать</strong><span>签字、签认</span></div>
+    <div class="item"><strong>оформить</strong><span>办理、完善手续</span></div>
+    <div class="item"><strong>предоставить</strong><span>提供</span></div>
+    <div class="item"><strong>учитывать</strong><span>考虑、纳入考虑</span></div>
+    <div class="item"><strong>решить</strong><span>解决</span></div>
+  </div>
+
+  <span class="label">高频组合</span>
+  <div class="phrase-grid">
+    <div class="phrase"><b>Проверьте объёмы.</b><br>请核对工程量。</div>
+    <div class="phrase"><b>Давайте сверим данные.</b><br>我们核对一下数据。</div>
+    <div class="phrase"><b>Есть замечания?</b><br>有什么意见 / 问题吗？</div>
+    <div class="phrase"><b>Просим учитывать фактические условия.</b><br>请考虑现场实际情况。</div>
+    <div class="phrase"><b>Документы соответствуют требованиям.</b><br>资料符合要求。</div>
+    <div class="phrase"><b>Нужно подписать документы.</b><br>需要签认资料。</div>
+    <div class="phrase"><b>Нужно закончить оформление документации.</b><br>需要完成资料办理。</div>
+    <div class="phrase"><b>Давайте решим этот вопрос.</b><br>我们把这个问题解决一下。</div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  离线单文件学习页 · 可直接浏览器打开、搜索、打印或导出 PDF
+</footer>
+
+<script>
+const input = document.getElementById('search');
+const blocks = [...document.querySelectorAll('.searchable')];
+
+function normalize(s){
+  return s.toLowerCase().replace(/\s+/g,' ').trim();
+}
+
+input.addEventListener('input', () => {
+  const q = normalize(input.value);
+  blocks.forEach(block => {
+    if(!q){
+      block.classList.remove('hidden');
+      block.querySelectorAll('.sentence').forEach(s=>s.classList.remove('hidden'));
+      return;
+    }
+    const sentences = [...block.querySelectorAll('.sentence')];
+    let any = false;
+    if(sentences.length){
+      sentences.forEach(s=>{
+        const hit = normalize(s.innerText).includes(q);
+        s.classList.toggle('hidden', !hit);
+        if(hit) any = true;
+      });
+      const blockHit = normalize(block.querySelector('h2')?.innerText || '').includes(q)
+        || normalize(block.querySelector('.summary')?.innerText || '').includes(q)
+        || normalize(block.querySelector('.vocab')?.innerText || '').includes(q)
+        || normalize(block.querySelector('.phrase-grid')?.innerText || '').includes(q);
+      block.classList.toggle('hidden', !(any || blockHit));
+      if(blockHit && !any) sentences.forEach(s=>s.classList.remove('hidden'));
+    } else {
+      block.classList.toggle('hidden', !normalize(block.innerText).includes(q));
+    }
+  });
+});
+</script>
+</body>
+</html>
